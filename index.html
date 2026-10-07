@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Harris | Personal Space</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --text: #f8fafc;
+            --accent: #38bdf8;
+            --muted: #94a3b8;
+            --card-bg: #1e293b;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { 
+            background-color: var(--bg); 
+            color: var(--text); 
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; 
+            line-height: 1.6; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            min-height: 100vh; 
+            padding: 20px;
+        }
+        .container { 
+            max-width: 600px; 
+            width: 100%; 
+            text-align: center; 
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        
+        h1 { 
+            font-size: 3rem; 
+            margin-bottom: 0.5rem; 
+            background: linear-gradient(to right, #38bdf8, #818cf8); 
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent; 
+        }
+        .subtitle { 
+            font-size: 1.2rem; 
+            color: var(--muted); 
+            margin-bottom: 2rem; 
+        }
+        .bio { 
+            background: var(--card-bg); 
+            padding: 2rem; 
+            border-radius: 24px; 
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3); 
+            margin-bottom: 2rem; 
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .links { 
+            display: flex; 
+            justify-content: center; 
+            gap: 1rem; 
+            flex-wrap: wrap; 
+        }
+        .link-card { 
+            text-decoration: none; 
+            color: var(--text); 
+            background: var(--card-bg); 
+            padding: 0.8rem 1.5rem; 
+            border-radius: 12px; 
+            font-weight: 500; 
+            transition: all 0.3s ease; 
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .link-card:hover { 
+            background: var(--accent); 
+            color: var(--bg); 
+            transform: translateY(-3px); 
+            box-shadow: 0 5px 15px rgba(56, 189, 248, 0.4);
+        }
+        footer { 
+            margin-top: 3rem; 
+            font-size: 0.8rem; 
+            color: var(--muted); 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>David Harris</h1>
+        <p class="subtitle">Welcome to my digital corner of the web</p>
+        
+        <div class="bio">
+            <p>Hello! I'm David. I'm passionate about technology, learning new things, and building cool stuff. This site was crafted to be a minimal, elegant home for my online presence.</p>
+        </div>
+        
+        <div class="links">
+            <a href="mailto:davidharris7@live.com" class="link-card">Email Me</a>
+            <a href="https://github.com/davidharris7" class="link-card">GitHub</a>
+            <a href="#" class="link-card">LinkedIn</a>
+        </div>
+        
+        <footer>
+            &copy; 2026 David Harris. Built with &hearts; and AI.
+        </footer>
+    </div>
+</body>
+</html>
